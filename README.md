@@ -20,7 +20,7 @@ above commands will generate DB at localMSSQLSERVER
 ```bash
 https://localhost:443/api/Contact/AddContact -  
 
-for adding conatct need to provide details in body in Json format
+adding conatct need to provide details in body in Json format
 Input parameter
 {
 	"FirstName":"Piyush",
@@ -38,14 +38,14 @@ https://localhost:443/api/Contact/GetAllContacts
 ```bash
 https://localhost:443/api/Contact/GetContact?criteria=9890398207 -
 
-for fetching conatct need to provide details in body in Json format
+fetching a conatct need to provide details in body in Json format
 passing parameter criteria and value either FirstName or ContactNumber or Email
 ```
 # Edit Contact
 ```bash
 https://localhost:443/api/Contact/UpdateContact-
 
-for adding conatct need to provide details in body in Json format
+update conatct need to provide details in body in Json format
 {
 	"FirstName":"Piyush",
 	"LastName":"Bhole",
@@ -57,7 +57,7 @@ for adding conatct need to provide details in body in Json format
 ```bash
 https://localhost:443/api/Contact/DeleteContact?criteria=9890398207 - 
 
-for adding conatct need to provide details in body in Json format
+Delete conatct need to provide details in body in Json format
 passing parameter criteria and value either FirstName or ContactNumber or Email
 ```
 
