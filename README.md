@@ -2,7 +2,7 @@
 Contact application - simple .Net core Web Api for managing contacts using .Net core Web API and EntityframeworkCore ans SQL server as database
 
 
-##Database Setup
+## Database Setup
 
 ```bash
 Run command using Package Manger console 
@@ -14,9 +14,9 @@ update-database
 above commands will generate DB at localMSSQLSERVER
 ```
 
-#Run API using postman tool
+# Run API using postman tool
 
-#AddContact
+# Add Contact
 ```bash
 https://localhost:443/api/Contact/AddContact -  
 
@@ -29,19 +29,19 @@ Input parameter
 	"ContactNumber":"9890398207"
 }
 ```
-#List Contacts
+# List Contacts
 ```bash
 https://localhost:443/api/Contact/GetAllContacts
 
 ```
-#Get a Contact
+# Get a Contact
 ```bash
 https://localhost:443/api/Contact/GetContact?criteria=9890398207 -
 
 for fetching conatct need to provide details in body in Json format
 passing parameter criteria and value either FirstName or ContactNumber or Email
 ```
-#Edit Contact
+# Edit Contact
 ```bash
 https://localhost:443/api/Contact/UpdateContact-
 
@@ -53,7 +53,7 @@ for adding conatct need to provide details in body in Json format
 	"ContactNumber":"9890398207"
 }
 ```
-#Delete Contact
+# Delete Contact
 ```bash
 https://localhost:443/api/Contact/DeleteContact?criteria=9890398207 - 
 
