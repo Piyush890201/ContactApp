@@ -10,13 +10,14 @@ Run command using Package Manger console
 Add-Migration -Context ContactWebAPI.Data.ContactDbContext -Name ContactInfo
 
 update-database
-```bash
-above commands will generate DB at localMSSQLSERVER
 
-Build application 
+above commands will generate DB at localMSSQLSERVER
+```
 
 #Run API using postman tool
 
+#AddContact
+```bash
 https://localhost:443/api/Contact/AddContact -  
 
 for adding conatct need to provide details in body in Json format
@@ -27,16 +28,21 @@ Input parameter
 	"Email":"Piyush.Bhole@gmail.com",
 	"ContactNumber":"9890398207"
 }
-
-
+```
+#List Contacts
+```bash
 https://localhost:443/api/Contact/GetAllContacts
 
-
+```
+#Get a Contact
+```bash
 https://localhost:443/api/Contact/GetContact?criteria=9890398207 -
 
 for fetching conatct need to provide details in body in Json format
 passing parameter criteria and value either FirstName or ContactNumber or Email
-
+```
+#Edit Contact
+```bash
 https://localhost:443/api/Contact/UpdateContact-
 
 for adding conatct need to provide details in body in Json format
@@ -46,11 +52,12 @@ for adding conatct need to provide details in body in Json format
 	"Email":"Piyush.Bhole@gmail.com",
 	"ContactNumber":"9890398207"
 }
-
-
+```
+#Delete Contact
+```bash
 https://localhost:443/api/Contact/DeleteContact?criteria=9890398207 - 
 
 for adding conatct need to provide details in body in Json format
 passing parameter criteria and value either FirstName or ContactNumber or Email
-
+```
 
